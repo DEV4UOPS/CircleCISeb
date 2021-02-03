@@ -16,4 +16,6 @@ jobs:
             apt-get install -y docker.io
       - run:
           name: "Build and push docker image"
-          command: docker push imagetest
+          command: |
+            docker build -t imagetest /tmp/
+            ls -lia /tmp
