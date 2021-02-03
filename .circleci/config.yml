@@ -13,4 +13,4 @@ jobs:
             apt-get install -y docker.io
       - run:
           name: "Build and push docker image"
-          command: docker info
+          command: docker ps -a
