@@ -6,4 +6,8 @@ jobs:
         
     steps:
       - checkout
-      - run: echo "Hello"
+      - run: |
+        echo "Hello"
+        ip a
+        hostname
+        uname -av
