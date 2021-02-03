@@ -14,4 +14,4 @@ jobs:
             apt-get install docker
       - run:
           name: "Build and push docker image in dockerhub"
-          command: docker build -t imagetest
+          command: docker --version
