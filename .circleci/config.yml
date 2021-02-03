@@ -8,7 +8,5 @@ jobs:
       - checkout
       - run:
         command: |
-          echo "Hello"
-          ip a
-          hostname
-          uname -av
+          ls -al
+          echo "Coucou"
