@@ -14,5 +14,5 @@ jobs:
       - run:
           name: "Build and push docker image"
           command: |
-            touch Dockerfile
+            echo "FROM ubuntu:16.04" > Dockerfile
             docker build -t imagetest:1.0 .
