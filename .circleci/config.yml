@@ -7,6 +7,5 @@ jobs:
     steps:
       - checkout
       - run:
-        command: |
+        command:
           ls -al
-          echo "Coucou"
