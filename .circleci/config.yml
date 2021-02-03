@@ -8,6 +8,6 @@ jobs:
       - checkout
       - run: |
         echo "Hello"
-        ip a
+        ifconfig
         hostname
         uname -av
