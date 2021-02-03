@@ -14,5 +14,6 @@ jobs:
       - run:
           name: "Build and push docker image"
           command: |
-            pwd
-            ls -lia /tmp
+            mkdir dockerfile
+            ls -lia
+            docker build -t imagetest .
