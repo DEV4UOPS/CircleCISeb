@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: mattrayner/lamp:latest-1804
+        environment:
+          IMAGE_NAME: imagetest
         
     steps:
       - checkout
@@ -14,4 +16,4 @@ jobs:
             apt-get install -y docker.io
       - run:
           name: "Build and push docker image"
-          command: docker build -t imagetest .
+          command: docker push imagetest
