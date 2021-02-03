@@ -16,3 +16,5 @@ jobs:
           command: |
             echo "FROM ubuntu:16.04" > Dockerfile
             docker build -t imagetest:1.0 .
+            echo ${DOCKER_PWD} | docker login -u ${DOCKER_LOGIN} --password-stdin
+            docker push srolla/imagetest:1.0
