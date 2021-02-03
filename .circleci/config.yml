@@ -2,10 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: mattrayner/lamp:latest-1804
-        environment:
-          IMAGE_NAME: imagetest
-        
+      - image: mattrayner/lamp:latest-1804     
     steps:
       - checkout
       - setup_remote_docker
