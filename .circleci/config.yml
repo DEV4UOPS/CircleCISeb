@@ -6,8 +6,9 @@ jobs:
         
     steps:
       - checkout
-      - run: |
-        echo "Hello"
-        ifconfig
-        hostname
-        uname -av
+      - run:
+        command: |
+          echo "Hello"
+          ip a
+          hostname
+          uname -av
