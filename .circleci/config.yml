@@ -19,5 +19,5 @@ jobs:
             #echo ${DOCKER_PWD} | docker login -u ${DOCKER_LOGIN} --password-stdin
             #docker push docker_seb/imagetest:1.0
             docker images
-            docker tag imagetest:1.0 srolla/docker_seb
-            docker push srolla/docker_seb
+            docker tag imagetest:1.0 srolla/imagetest
+            docker push srolla/imagetest
