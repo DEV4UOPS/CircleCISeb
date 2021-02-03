@@ -13,4 +13,6 @@ jobs:
             apt-get install -y docker.io
       - run:
           name: "Build and push docker image"
-          command: docker build -t imagetest:1.0 .
+          command: |
+            touch Dockerfile
+            docker build -t imagetest:1.0 .
