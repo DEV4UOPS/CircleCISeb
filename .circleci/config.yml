@@ -14,11 +14,11 @@ jobs:
       - run:
           name: "Build and push docker image"
           command: |
-            echo "FROM ubuntu:16.04" > Dockerfile
-            #docker build -t imagetest:1.0 .
-            #docker images
-            #docker tag imagetest:1.0 srolla/docker_seb
-            #echo ${DOCKER_PWD} | docker login -u ${DOCKER_LOGIN} --password-stdin
-            #docker push srolla/docker_seb
-            ls -lia
-            pwd
+            #echo "FROM ubuntu:16.04" > Dockerfile
+            docker build -t imagetest:1.0 .
+            docker images
+            docker tag imagetest:1.0 srolla/docker_seb
+            echo ${DOCKER_PWD} | docker login -u ${DOCKER_LOGIN} --password-stdin
+            docker push srolla/docker_seb
+            #ls -lia
+            #pwd
