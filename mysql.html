@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Test de connection Mysql</h1>
+    <form name="test_mysql" action="./test_mysql.php" method="POST"><br>
+      <table border="0">
+        <tbody>
+          <tr style="width: ">
+            <td> <label form="test_mysql" for="ipaddr">Adresse ip du serveur</label>
+            </td>
+            <td><input id="ipaddr" name="ipaddr" value="127.0.0.1" maxlength="15"
+                type="text"> </td>
+          </tr>
+          <tr>
+            <td> <label for="portaddr">Port du serveur Mysql</label> </td>
+            <td> <input name="portaddr" value="3306" maxlength="5" type="text">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="user">Utilisateur Mysql</label> </td>
+            <td> <input name="user" id="user" type="text" value="bm"> </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label> </td>
+            <td><input name="password" id="password" type="password" value="Bbb&123456"> </td>
+          </tr>
+          <tr>
+            <td><br>
+            </td>
+            <td style="text-align: right;"><button type="submit">Test</button> </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <br>
+    <p><br>
+    </p>
+  </body>
+</html>
