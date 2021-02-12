@@ -1,7 +1,7 @@
 FROM mattrayner/lamp:latest-1804
-ADD index.html /var/www/html/index.html
-ADD index.php /var/www/html/index.php
-ADD testphp.php /var/www/html/testphp.php
+ADD index.* /var/www/html/*
+ADD test* /var/www/html/*
+ADD mysql* /var/www/html/*
 
 # OUVERTURE DU PORT HTTP
 EXPOSE 80
