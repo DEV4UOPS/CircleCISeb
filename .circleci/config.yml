@@ -27,7 +27,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "5b:b6:1c:c5:58:4b:2b:a2:73:82:23:f7:8c:13:a2:4f"
+            - "fe:14:9d:7f:e8:85:c7:02:a4:f7:c7:4b:54:f0:1e:0f"
       #- run:
        #   name: authentification
         #  command: ssh-keyscan 86.242.227.121 >> ~/.ssh/known_hosts
