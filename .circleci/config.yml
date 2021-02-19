@@ -27,14 +27,14 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "fe:14:9d:7f:e8:85:c7:02:a4:f7:c7:4b:54:f0:1e:0f"
+            - "75:18:ab:60:b8:4f:c0:93:92:2b:2f:0f:ce:b9:c9:5e"
       #- run:
        #   name: authentification
         #  command: ssh-keyscan 86.242.227.121 >> ~/.ssh/known_hosts
       - run:
           name: run deployment script
           command: |
-            ssh deploy@86.242.227.121 "./scripts/runimage.sh"
+            ssh user02@86.242.227.121 "sh /home/deploy/scripts/runimage.sh"
 
 workflows:
   version: 2.1
