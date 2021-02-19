@@ -23,15 +23,14 @@ jobs:
             #ls -lia
             #pwd
   deploy:
-    machine:
-      enabled: true
+    machine: true
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "fd:e6:40:53:6c:07:35:45:01:82:ba:51:aa:8e:5f:c2"
-      - run:
-          name: authentification
-          command: ssh-keyscan 86.242.227.121 >> ~/.ssh/known_hosts
+            - "5b:b6:1c:c5:58:4b:2b:a2:73:82:23:f7:8c:13:a2:4f"
+      #- run:
+       #   name: authentification
+        #  command: ssh-keyscan 86.242.227.121 >> ~/.ssh/known_hosts
       - run:
           name: run deployment script
           command: |
