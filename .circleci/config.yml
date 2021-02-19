@@ -29,7 +29,7 @@ jobs:
       - run:
           name: run deployment script
           command: |
-            ssh -o StrictHostKeyChecking=no deploy@86.242.227.121:7822 "/bin/bash echo "Bonjour""
+            ssh -o StrictHostKeyChecking=no deploy@86.242.227.121 "/bin/bash touch /tmp/toto"
 
 workflows:
   version: 2.1
