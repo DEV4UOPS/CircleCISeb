@@ -28,3 +28,11 @@ jobs:
       command: |
         ssh -o StrictHostKeyChecking=no deploy@86.242.227.121:7822 "/bin/bash echo "Bonjour"
 
+workflows:
+   version: 2.1
+   build-and-deploy:
+     jobs:
+       - build
+       - deploy:
+           requires:
+             - build # only deploy once build job has completed
