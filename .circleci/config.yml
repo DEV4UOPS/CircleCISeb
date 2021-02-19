@@ -29,9 +29,9 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "PnqHkPUy5+n1+qxN+CLzHscX5ogZnbg9eMXr/xUz93w"
-      -run:
-        name: authentification
-        command: ssh-keyscan 86.242.227.121 >> ~/.ssh/known_hosts
+      - run:
+          name: authentification
+          command: ssh-keyscan 86.242.227.121 >> ~/.ssh/known_hosts
       - run:
           name: run deployment script
           command: |
