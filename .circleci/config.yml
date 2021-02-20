@@ -34,8 +34,8 @@ jobs:
       - run:
           name: run deployment script
           command: |
-            #ssh deploy@86.242.227.121 "sh /home/deploy/scripts/runimage.sh"
-            ssh root@159.8.78.5 " touch /root/titi"
+            ssh deploy@86.242.227.121 "touch /home/deploy/toto"
+            #ssh root@159.8.78.5 " touch /root/titi"
 
 workflows:
   version: 2.1
